@@ -28,18 +28,21 @@ export const createTodoListError = createAction(
   props<{ error: any }>()
 );
 
+/*
+  Resolução: Os nomes definidos para a action "create" era o mesmo definido para a action "remove"
+*/
 export const removeTodoList = createAction(
-  '[TodoList] Create TodoList',
+  '[TodoList] Remove TodoList',
   props<{ taskId: string }>()
 );
 
 export const removeTodoListSuccess = createAction(
-  '[TodoList] Create TodoList Success',
+  '[TodoList] Remove TodoList Success',
   props<{ taskId: string }>()
 );
 
 export const removeTodoListError = createAction(
-  '[TodoList] Create TodoList error',
+  '[TodoList] Remove TodoList error',
   props<{ error: any }>()
 );
 
